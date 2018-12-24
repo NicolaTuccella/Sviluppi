@@ -1,0 +1,63 @@
+﻿using System;
+using System.Windows.Forms;
+
+
+namespace DarmaLab
+{
+
+    public class Person
+    {
+        // Constructor that takes no arguments:
+        public Person()
+        {
+            Name = "unknown";
+            Age = 0;
+        }
+
+        // Constructor that takes one argument:
+        public Person(string name)
+        {
+            Name = name;
+        }
+
+        // Auto-implemented readonly property:
+        public string Name { get; }
+        public int Age { get; set; }
+
+        // Method that overrides the base class (System.Object) implementation.
+        public override string ToString()
+        {
+            return Name.ToString();
+        }
+    }
+
+    class TestPerson
+    {
+        static void Main()
+        {
+            // Call the constructor that has no parameters.
+            var person1 = new Person();
+            Console.WriteLine(person1.Name);
+
+            // Call the constructor that has one parameter.
+            var person2 = new Person("Sarah Jones");
+            Console.WriteLine(person2.Name);
+            // OR use ToString method to get string representation of the person2 instance:
+            Console.WriteLine(person2.ToString());
+
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey();
+        }
+    }
+
+    public static class MyModule
+    {
+        
+        public static void MsgStato( string messaggio)
+        {
+            MessageBox.Show(messaggio);
+        }
+
+
+    }
+};
