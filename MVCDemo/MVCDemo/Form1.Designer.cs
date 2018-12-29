@@ -40,75 +40,76 @@ namespace MVCDemo
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Items.AddRange( new System.Windows.Forms.ToolStripItem[] {
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.plikToolStripMenuItem,
-            this.oknoToolStripMenuItem} );
-            this.menuStrip1.Location = new System.Drawing.Point( 0, 0 );
+            this.oknoToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size( 292, 24 );
+            this.menuStrip1.Size = new System.Drawing.Size(292, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // plikToolStripMenuItem
             // 
-            this.plikToolStripMenuItem.DropDownItems.AddRange( new System.Windows.Forms.ToolStripItem[] {
+            this.plikToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.pointViewToolStripMenuItem,
-            this.pointGraphicsToolStripMenuItem} );
+            this.pointGraphicsToolStripMenuItem});
             this.plikToolStripMenuItem.Name = "plikToolStripMenuItem";
-            this.plikToolStripMenuItem.Size = new System.Drawing.Size( 34, 20 );
+            this.plikToolStripMenuItem.Size = new System.Drawing.Size(38, 20);
             this.plikToolStripMenuItem.Text = "Plik";
             // 
             // pointViewToolStripMenuItem
             // 
             this.pointViewToolStripMenuItem.Name = "pointViewToolStripMenuItem";
-            this.pointViewToolStripMenuItem.Size = new System.Drawing.Size( 152, 22 );
+            this.pointViewToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pointViewToolStripMenuItem.Text = "Point View";
-            this.pointViewToolStripMenuItem.Click += new System.EventHandler( this.pointViewToolStripMenuItem_Click );
+            this.pointViewToolStripMenuItem.Click += new System.EventHandler(this.pointViewToolStripMenuItem_Click);
             // 
             // pointGraphicsToolStripMenuItem
             // 
             this.pointGraphicsToolStripMenuItem.Name = "pointGraphicsToolStripMenuItem";
-            this.pointGraphicsToolStripMenuItem.Size = new System.Drawing.Size( 152, 22 );
+            this.pointGraphicsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.pointGraphicsToolStripMenuItem.Text = "Point Graphics";
-            this.pointGraphicsToolStripMenuItem.Click += new System.EventHandler( this.pointGraphicsToolStripMenuItem_Click );
+            this.pointGraphicsToolStripMenuItem.Click += new System.EventHandler(this.pointGraphicsToolStripMenuItem_Click);
             // 
             // oknoToolStripMenuItem
             // 
-            this.oknoToolStripMenuItem.DropDownItems.AddRange( new System.Windows.Forms.ToolStripItem[] {
+            this.oknoToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sasiadujacoToolStripMenuItem,
-            this.kaskadowoToolStripMenuItem} );
+            this.kaskadowoToolStripMenuItem});
             this.oknoToolStripMenuItem.Name = "oknoToolStripMenuItem";
-            this.oknoToolStripMenuItem.Size = new System.Drawing.Size( 44, 20 );
-            this.oknoToolStripMenuItem.Text = "Okno";
+            this.oknoToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
+            this.oknoToolStripMenuItem.Text = "Windows";
             // 
             // sasiadujacoToolStripMenuItem
             // 
             this.sasiadujacoToolStripMenuItem.Name = "sasiadujacoToolStripMenuItem";
-            this.sasiadujacoToolStripMenuItem.Size = new System.Drawing.Size( 152, 22 );
-            this.sasiadujacoToolStripMenuItem.Text = "Sasiadujaco";
-            this.sasiadujacoToolStripMenuItem.Click += new System.EventHandler( this.sasiadujacoToolStripMenuItem_Click );
+            this.sasiadujacoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.sasiadujacoToolStripMenuItem.Text = "Tile vertical";
+            this.sasiadujacoToolStripMenuItem.Click += new System.EventHandler(this.sasiadujacoToolStripMenuItem_Click);
             // 
             // kaskadowoToolStripMenuItem
             // 
             this.kaskadowoToolStripMenuItem.Name = "kaskadowoToolStripMenuItem";
-            this.kaskadowoToolStripMenuItem.Size = new System.Drawing.Size( 152, 22 );
-            this.kaskadowoToolStripMenuItem.Text = "Kaskadowo";
-            this.kaskadowoToolStripMenuItem.Click += new System.EventHandler( this.kaskadowoToolStripMenuItem_Click );
+            this.kaskadowoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.kaskadowoToolStripMenuItem.Text = "Cascade";
+            this.kaskadowoToolStripMenuItem.Click += new System.EventHandler(this.kaskadowoToolStripMenuItem_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF( 6F, 13F );
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size( 292, 266 );
-            this.Controls.Add( this.menuStrip1 );
+            this.ClientSize = new System.Drawing.Size(292, 266);
+            this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "MVC Demo";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.menuStrip1.ResumeLayout( false );
+            this.Load += new System.EventHandler(this.Form1_Load);
+            this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.ResumeLayout( false );
+            this.ResumeLayout(false);
             this.PerformLayout();
 
         }

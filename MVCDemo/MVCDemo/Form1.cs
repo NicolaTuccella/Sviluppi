@@ -40,5 +40,10 @@ namespace MVCDemo
         {
             this.LayoutMdi( MdiLayout.Cascade );
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

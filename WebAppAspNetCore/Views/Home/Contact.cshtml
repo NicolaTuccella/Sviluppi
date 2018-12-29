@@ -1,0 +1,26 @@
+﻿@{
+    ViewData["Title"] = "Contatti";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+<address>
+    Nicola Tuccella<br />
+    Via Boccherini,37<br />
+    <abbr title="Cellulare">Mobile:</abbr>
+    349.4764599
+</address>
+
+<address>
+    <strong>Support:</strong> <a href="mailto:Support@example.com">Support@example.com</a><br />
+    <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+</address>
+<div>
+    Razor è un linguaggio TML (Template Markup Language)<br />
+    <ul>
+        @for (int i = 0; i < 5; i++)
+        {
+            <li>List item @i</li>
+        }
+    </ul>
+</div>

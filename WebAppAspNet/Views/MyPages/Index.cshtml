@@ -1,0 +1,17 @@
+﻿
+<h2>Home</h2>
+
+@{
+    ViewBag.Title = "Index";
+    <p>@this.ViewBag.Message</p>
+
+}
+@if (this.ViewBag.ShowDate)
+{
+    <div>La data corrente è @this.ViewBag.CurrentDate</div>
+    @Html.ActionLink("vai al link …", "SayHello")
+}
+
+
+
+

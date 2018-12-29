@@ -1,0 +1,8 @@
+﻿
+utente registrato:
+sinelunte@gmail.com
+Password123!
+
+
+Install-Package Microsoft.AspNet.DynamicData.EFProvider -Version 6.0.0
+Install-Package Microsoft.AspNet.EntityDataSource -Version 6.0.0

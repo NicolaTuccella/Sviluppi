@@ -1,0 +1,6 @@
+﻿
+http://knockoutjs.com/index.html
+building a web UI with the Model-View-ViewModel (MVVM) pattern using knockout.js
+
+
+https://docs.microsoft.com/it-it/aspnet/web-api/overview/data/using-web-api-with-entity-framework/part-9

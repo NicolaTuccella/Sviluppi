@@ -134,5 +134,10 @@ namespace Sample
         }
 
         #endregion
+
+        private void _gridProducts_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
