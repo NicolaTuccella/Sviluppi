@@ -1,0 +1,5 @@
+﻿
+- Migrazione DB usando Code-First
+Enable-Migrations -EnableAutomaticMigrations -ContextTypeName WebApplicationMVC.DAL.BookContext -force
+
+Update-Database -force
