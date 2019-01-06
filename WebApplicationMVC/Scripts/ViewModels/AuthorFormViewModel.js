@@ -12,6 +12,7 @@ function AuthorFormViewModel() {
     };
 
     self.validateAndSave = function (form) {
+        console.log("validateAndSave");
         if (!$(form).valid())
             return false;
 
@@ -25,13 +26,24 @@ function AuthorFormViewModel() {
             type: 'post',
             contentType: 'application/x-www-form-urlencoded',
             data: ko.toJS(self.author),
-            success: function () { self.successfulSave; },
+            success: function () {
+                console.log("AJAX .success");
+                self.successfulSave;
+            },
             error: function () { self.errorSave; },
-            complete: function () { self.sending(false); }
+            complete: function () {
+                // console.log("AJAX .complete");
+                self.sending(false);
+
+                $('.body-content').prepend(
+                    '<div class="alert alert-success"><strong>Success!</strong> The new author has been saved.</div> ');
+                setTimeout(function () { location.href = './'; }, 7000);
+            }
         });
     };
 
     self.successfulSave = function () {
+        // console.log("successfulSave");
         self.saveCompleted(true);
 
         $('.body-content').prepend(
